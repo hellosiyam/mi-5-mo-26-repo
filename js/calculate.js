@@ -40,3 +40,25 @@ function calculateRectangleArea() {
     const rectangleValue = document.getElementById('rectangle-area');
     rectangleValue.innerText = rectangle;
 }
+
+
+// ParallelogramArea
+function calculateParallelogramArea() {
+    // ParallelogramBase
+    const getParallelogramBaseValue = document.getElementById('parallelogram-base');
+    const getParallelogramBase = getParallelogramBaseValue.value;
+    const parallelogramBaseValue = parseFloat(getParallelogramBase)
+
+    // ParallelogramHeight
+    const getParallelogramHightValue = document.getElementById('parallelogram-height');
+    const getParallelogramHeight = getParallelogramHightValue.value;
+    const parallelogramHeightValue = parseFloat(getParallelogramHeight);
+
+    // ParallelogramArea
+    const parallelogramArea = parallelogramBaseValue * parallelogramHeightValue;
+
+    // ParallelogramAreaDisplay
+    const parallelogram = document.getElementById('parallelogram-area');
+    parallelogram.innerText = parallelogramArea;
+
+}
