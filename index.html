@@ -17,7 +17,7 @@
           <!-- Shape Card continer -->
           <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- Tringle -->
-              <div class="card bg-base-100 w-auto shadow-xl p-4">
+              <div onmouseenter="hover()" class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
                       src="images/triangle.png"
@@ -93,17 +93,17 @@
                   </figure>
                   <div class="text-center">
                     <h2 class="items-center text-lg font-medium mb-3">Rhombus</h2>
-                    <p class="text-base mb-6">Area (A) = 0.5  X  <span>d</span><span></span>  X  h</p>
+                    <p class="text-base mb-6">Area (A) = 0.5  X  d <sub>1</sub>  X  d <sub>2</sub></p>
                     <!-- Input Section -->
                     <div class="mb-12">
                       <input id="rhombus-base" type="text" placeholder="b" class="bg-[#F1F1F1] h-12 w-24 rounded ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
-                      <input id="triangle-height" type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
+                      <input id="rhombus-width" type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
                     </div>
                     <div>
-                      <p class="text-2xl mb-5">Area: <span id="triangle-area"></span><span>cm</span><span><sup>2</sup></span></p>
+                      <p class="text-2xl mb-5">Area: <span id="rhombus-area"></span><span>cm</span><span><sup>2</sup></span></p>
                     </div>
                     <div class="justify-center">
-                      <button onclick="calculate()" id="try-btn" class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
+                      <button onclick="calculateRhombusArea()" class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -111,22 +111,22 @@
               <div class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
-                      src="images/triangle.png"
+                      src="images/pentagon.png"
                       alt="triangle" />
                   </figure>
                   <div class="text-center">
-                    <h2 class="items-center text-lg font-medium mb-3">Triangle</h2>
-                    <p class="text-base mb-6">Area (A) = 0.5  X  b  X  h</p>
+                    <h2 class="items-center text-lg font-medium mb-3">Pentagon</h2>
+                    <p class="text-base mb-6">Area (A) = 0.5  X  p  X  b</p>
                     <!-- Input Section -->
                     <div class="mb-12">
-                      <input id="triangle-base" type="text" placeholder="b" class="bg-[#F1F1F1] h-12 w-24 rounded ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
-                      <input id="triangle-height" type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
+                      <input id="pentagon-p" type="text" placeholder="b" class="bg-[#F1F1F1] h-12 w-24 rounded ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
+                      <input id="pentagon-base" type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
                     </div>
                     <div>
-                      <p class="text-2xl mb-5">Area: <span id="triangle-area"></span><span>cm</span><span><sup>2</sup></span></p>
+                      <p class="text-2xl mb-5">Area: <span id="pentagon-area"></span><span>cm</span><span><sup>2</sup></span></p>
                     </div>
                     <div class="justify-center">
-                      <button onclick="calculate()" id="try-btn" class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
+                      <button onclick="calculatePentagonArea()" class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -134,22 +134,22 @@
               <div class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
-                      src="images/triangle.png"
+                      src="images/ellipse.png"
                       alt="triangle" />
                   </figure>
                   <div class="text-center">
-                    <h2 class="items-center text-lg font-medium mb-3">Triangle</h2>
-                    <p class="text-base mb-6">Area (A) = 0.5  X  b  X  h</p>
-                    <!-- Input Section -->
+                    <h2 class="items-center text-lg font-medium mb-3">Ellipse</h2>
+                    <p class="text-base mb-6">Area (A) = π * a * b</p>
+                  <!-- Input Section -->
                     <div class="mb-12">
-                      <input id="triangle-base" type="text" placeholder="b" class="bg-[#F1F1F1] h-12 w-24 rounded ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
-                      <input id="triangle-height" type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
+                      <input id="ellipse-base" type="text" placeholder="b" class="bg-[#F1F1F1] h-12 w-24 rounded ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
+                      <input id="ellipse-height" type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
                     </div>
                     <div>
-                      <p class="text-2xl mb-5">Area: <span id="triangle-area"></span><span>cm</span><span><sup>2</sup></span></p>
+                      <p class="text-2xl mb-5">Area: <span id="ellipse-area"></span><span>cm</span><span><sup>2</sup></span></p>
                     </div>
                     <div class="justify-center">
-                      <button onclick="calculate()" id="try-btn" class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
+                      <button onclick="calculateEllipseArea()" class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
                     </div>
                   </div>
                 </div>
@@ -162,6 +162,10 @@
 
     <!-- Script -->
     <script src="js/calculate.js"></script>
+    <script src="js/triangle.js"></script>
+    <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
     </main>
 </body>
 </html>
