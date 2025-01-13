@@ -1,4 +1,5 @@
-function calculate() {
+// TringleArea 
+function calculateTringleArea() {
     // TringleBase
     const getTringleBaseValue = document.getElementById('triangle-base');
     const getTringleBase = getTringleBaseValue.value;
@@ -17,4 +18,25 @@ function calculate() {
     // Show the Trangle Value
     const tringleValue = document.getElementById('triangle-area');
     tringleValue.innerText = calculate
+}
+
+
+// RectangleArea
+function calculateRectangleArea() {
+    // RectangleWidth
+    const getRectangleWeidthValue = document.getElementById('rectangle-wide');
+    const getRectangleWidth = getRectangleWeidthValue.value;
+    const getWidthValue = parseFloat(getRectangleWidth);
+    
+    // RectangleHeight
+    const getRectangleLengthValue = document.getElementById('rectangle-length');
+    const getRectangleLength = getRectangleLengthValue.value;
+    const getLengthValue = parseFloat(getRectangleLength);
+    
+    // calculate Rectangle 
+    const rectangle = getWidthValue * getLengthValue;
+    
+    // Show The Ractangle Value 
+    const rectangleValue = document.getElementById('rectangle-area');
+    rectangleValue.innerText = rectangle;
 }
