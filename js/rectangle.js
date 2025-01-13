@@ -19,3 +19,14 @@ function setAreaById(events ,area) {
     const displayValue = event;
     return displayValue;
 }
+
+
+const divRectangle = document.getElementById('rectangleDiv');
+
+divRectangle.addEventListener('mouseover', function () {
+    divRectangle.style.backgroundColor = 'goldenrod'
+})
+
+divRectangle.addEventListener('mouseout', function () {
+    divRectangle.style.backgroundColor = ''
+})

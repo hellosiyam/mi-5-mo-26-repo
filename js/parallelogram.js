@@ -19,3 +19,13 @@ function setDisplyVlaue(events, area) {
     const displayValue = event;
     return displayValue; 
 }
+
+const divParallelogram = document.getElementById('parallelogramDiv');
+
+divParallelogram.addEventListener('mouseover', function () {
+    divParallelogram.style.backgroundColor = 'teal'
+})
+
+divParallelogram.addEventListener('mouseout', function () {
+    divParallelogram.style.backgroundColor = ''
+})

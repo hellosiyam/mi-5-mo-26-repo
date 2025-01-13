@@ -11,13 +11,13 @@
     <header>
 
     </header>
-    <main class="mx-5">
+    <main class="mx-5 my-5  ">
         <!-- Shape area -->
-        <div class=" flex flex-col md:flex-row">
+        <div class=" flex flex-col md:flex-row gap-6">
           <!-- Shape Card continer -->
-          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="gap-4 flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- Tringle -->
-              <div onmouseenter="hover()" class="card bg-base-100 w-auto shadow-xl p-4">
+              <div id="triangleDiv" class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
                       src="images/triangle.png"
@@ -40,7 +40,7 @@
                   </div>
                 </div>
                 <!-- Rectangle -->
-              <div class="card bg-base-100 w-auto shadow-xl p-4">
+              <div id="rectangleDiv" class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
                       src="images/rectangle.png"
@@ -63,7 +63,7 @@
                   </div>
                 </div>
                 <!-- Parallelogram -->
-              <div class="card bg-base-100 w-auto shadow-xl p-4">
+              <div id="parallelogramDiv" class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
                       src="images/parallelogram.png" alt="triangle" />
@@ -85,7 +85,7 @@
                   </div>
                 </div>
                 <!-- Rhombus -->
-              <div class="card bg-base-100 w-auto shadow-xl p-4">
+              <div id="rhombusDiv" class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
                       src="images/rhombus.png"
@@ -108,7 +108,7 @@
                   </div>
                 </div>
                 <!-- Pentagon -->
-              <div class="card bg-base-100 w-auto shadow-xl p-4">
+              <div id="pentagonDiv" class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
                       src="images/pentagon.png"
@@ -131,7 +131,7 @@
                   </div>
                 </div>
                   <!-- Ellipse   -->
-              <div class="card bg-base-100 w-auto shadow-xl p-4">
+              <div id="ellipseDiv" class="card bg-base-100 w-auto shadow-xl p-4">
                   <figure class="mb-12 mt-12">
                     <img
                       src="images/ellipse.png"
@@ -155,13 +155,13 @@
                 </div>
         </div>
           <!-- Calcolation Area -->
-        <div class="w-auto lg:w-96 boreder-2 border-[#1111111A] text-center">
+        <div class="w-auto lg:w-96 border-[2px] rounded-lg  text-center">
           <h3>Area Calcolator</h3>
         </div> 
         </div>
 
     <!-- Script -->
-    <script src="js/calculate.js"></script>
+    <script src="js/parallelogram.js"></script>
     <script src="js/rectangle.js"></script>
     <script src="js/triangle.js"></script>
     <script src="js/rhombus.js"></script>

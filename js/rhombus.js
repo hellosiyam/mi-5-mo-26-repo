@@ -19,3 +19,12 @@ function setAreaById(elements, area) {
     const display = element
     return display
 }
+
+const divRhombush = document.getElementById('rhombusDiv');
+divRhombush.addEventListener('mouseover', function () {
+    divRhombush.style.backgroundColor = 'beige'
+})
+
+divRhombush.addEventListener('mouseout', function () {
+    divRhombush.style.backgroundColor = ''
+})

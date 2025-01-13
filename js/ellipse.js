@@ -19,3 +19,12 @@ function setDisplyVlaue(events, area) {
     const display = event;
     return display
 }
+
+const divEllipse = document.getElementById('ellipseDiv');
+divEllipse.addEventListener('mouseover', function () {
+    divEllipse.style.backgroundColor = 'gray'
+})
+
+divEllipse.addEventListener('mouseout', function () {
+    divEllipse.style.backgroundColor = ''
+})

@@ -19,3 +19,18 @@ function  setAreaById(events, area) {
     const eventValue = event;
     return eventValue;
 }
+
+
+const divTriangle = document.getElementById('triangleDiv');
+
+divTriangle.addEventListener('mouseover', function () {
+    divTriangle.style.backgroundColor = 'pink'
+})
+
+divTriangle.addEventListener('mouseout', function () {
+    divTriangle.style.backgroundColor = ''
+})
+
+
+
+  

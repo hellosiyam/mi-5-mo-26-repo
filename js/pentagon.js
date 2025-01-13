@@ -19,3 +19,12 @@ function setDisplyVlaue(events, area) {
     const display = displayValue;
     return display 
 }
+
+const divPentagone = document.getElementById('pentagonDiv');
+divPentagone.addEventListener('mouseover',function () {
+    divPentagone.style.backgroundColor = 'sage'
+})
+
+divPentagone.addEventListener('mouseout', function () {
+    divPentagone.style.backgroundColor = ''
+})
