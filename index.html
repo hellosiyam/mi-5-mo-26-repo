@@ -25,11 +25,14 @@
                   <p class="text-base mb-6">Area (A) = 0.5  X  b  X  h</p>
                   <!-- Input Section -->
                   <div class="mb-12">
-                    <input type="text" placeholder="b" class="bg-[#F1F1F1] h-12 w-24 rounded ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
-                    <input type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
+                    <input id="triangle-base" type="text" placeholder="b" class="bg-[#F1F1F1] h-12 w-24 rounded ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
+                    <input id="triangle-height" type="text" placeholder="h" class="bg-[#F1F1F1] h-12 w-24 rounded  ml-4 p-3 text-[#414141]"> <span class="ml-3 font-semibold text-base">cm</span>
                   </div>
-                  <div class="w-auto justify-center">
-                    <button class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
+                  <div>
+                    <p class="text-2xl mb-5">Area: <span id="triangle-area"></span><span>cm</span><span><sup>2</sup></span></p>
+                  </div>
+                  <div class="justify-center">
+                    <button onclick="calculate()" id="try-btn" class="btn h-14 w-full bg-[#1090D8] text-white font-bold text-xl">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -38,6 +41,9 @@
          <div>
 
          </div>
+
+    <!-- Script -->
+    <script src="js/calculate.js"></script>
     </main>
 </body>
 </html>
