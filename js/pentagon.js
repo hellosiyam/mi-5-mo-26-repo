@@ -22,7 +22,7 @@ function setDisplyVlaue(events, area) {
 
 const divPentagone = document.getElementById('pentagonDiv');
 divPentagone.addEventListener('mouseover',function () {
-    divPentagone.style.backgroundColor = 'sage'
+    divPentagone.style.backgroundColor = 'silver'
 })
 
 divPentagone.addEventListener('mouseout', function () {

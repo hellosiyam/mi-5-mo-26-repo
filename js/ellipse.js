@@ -22,7 +22,7 @@ function setDisplyVlaue(events, area) {
 
 const divEllipse = document.getElementById('ellipseDiv');
 divEllipse.addEventListener('mouseover', function () {
-    divEllipse.style.backgroundColor = 'gray'
+    divEllipse.style.backgroundColor = 'teal'
 })
 
 divEllipse.addEventListener('mouseout', function () {
